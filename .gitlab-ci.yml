@@ -48,7 +48,7 @@ variables:
 
 # High level stages
 
-test:
+testjob:
   tags: [lassen, shell]
-  scripts:
+  script:
     - echo $CMAKE_EXE_LINKER_FLAGS
