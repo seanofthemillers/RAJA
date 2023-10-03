@@ -31,7 +31,7 @@ xl_2022_08_19_gcc_8_3_1_cuda_11_2_0:
 gcc_8_3_1_omptask:
   variables:
     SPEC: " ~shared +openmp +omptask +tests %gcc@8.3.1 ^blt@git.681faee4c1a61201017dd95bc5ff6ad5341372dd=develop ^camp@git.a5e7664cb6262e22036813f2f2e9a77ff507db5e=main"
-  extends: .build_and_test_on_lassen
+  extends: .job_on_lassen
 
 gcc_8_3_1_cuda_11_5_0_ats_disabled:
   extends: .job_on_lassen
@@ -47,7 +47,7 @@ gcc_8_3_1_cuda_11_5_0_ats_disabled:
 clang_13_0_1_libcpp:
   variables:
     SPEC: " ~shared +openmp +tests %clang@13.0.1 cflags==\"-DGTEST_HAS_CXXABI_H_=0\" cxxflags==\"-stdlib=libc++ -DGTEST_HAS_CXXABI_H_=0\" ^blt@git.681faee4c1a61201017dd95bc5ff6ad5341372dd=develop ^camp@git.a5e7664cb6262e22036813f2f2e9a77ff507db5e=main"
-  extends: .build_and_test_on_lassen
+  extends: .job_on_lassen
 
 #clang_14_0_5_asan:
 #  variables:
@@ -59,4 +59,4 @@ clang_13_0_1_libcpp:
 gcc_8_3_1_cuda_10_1_243_desul_atomics:
   variables:
     SPEC: " ~shared +openmp +tests +cuda +desul %gcc@8.3.1 cuda_arch=70 ^cuda@10.1.243+allow-unsupported-compilers ^blt@git.681faee4c1a61201017dd95bc5ff6ad5341372dd=develop ^camp@git.a5e7664cb6262e22036813f2f2e9a77ff507db5e=main"
-  extends: .build_and_test_on_lassen
+  extends: .job_on_lassen
