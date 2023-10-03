@@ -20,7 +20,7 @@ variables:
 # Project specific variants for ruby
   PROJECT_RUBY_VARIANTS: "~shared +openmp +tests"
 # Project specific deps for ruby
-  PROJECT_RUBY_DEPS: "^blt@git.67bef5eb4cf559d01c79051eaac1292eb46430d2=develop ^camp@git.9758bdb59f0bc165bce9ae85fc52d14f7978e852=main"
+  PROJECT_RUBY_DEPS: "^blt@git.681faee4c1a61201017dd95bc5ff6ad5341372dd=develop ^camp@git.a5e7664cb6262e22036813f2f2e9a77ff507db5e=main"
 
 # Corona
 # Arguments for top level allocation
@@ -30,7 +30,7 @@ variables:
 # Project specific variants for corona
   PROJECT_CORONA_VARIANTS: "~shared ~openmp +tests"
 # Project specific deps for corona
-  PROJECT_CORONA_DEPS: "^blt@git.67bef5eb4cf559d01c79051eaac1292eb46430d2=develop ^camp@git.9758bdb59f0bc165bce9ae85fc52d14f7978e852=main"
+  PROJECT_CORONA_DEPS: "^blt@git.681faee4c1a61201017dd95bc5ff6ad5341372dd=develop ^camp@git.a5e7664cb6262e22036813f2f2e9a77ff507db5e=main"
 
 # Tioga
 # Arguments for top level allocation
@@ -40,7 +40,7 @@ variables:
 # Project specific variants for corona
   PROJECT_TIOGA_VARIANTS: "~shared ~openmp +tests"
 # Project specific deps for corona
-  PROJECT_TIOGA_DEPS: "^blt@git.67bef5eb4cf559d01c79051eaac1292eb46430d2=develop ^camp@git.9758bdb59f0bc165bce9ae85fc52d14f7978e852=main "
+  PROJECT_TIOGA_DEPS: "^blt@git.681faee4c1a61201017dd95bc5ff6ad5341372dd=develop ^camp@git.a5e7664cb6262e22036813f2f2e9a77ff507db5e=main "
 
 # Lassen and Butte use a different job scheduler (spectrum lsf) that does not
 # allow pre-allocation the same way slurm does.
@@ -49,7 +49,7 @@ variables:
 # Project specific variants for lassen
   PROJECT_LASSEN_VARIANTS: "~shared +openmp +tests cuda_arch=70"
 # Project specific deps for lassen
-  PROJECT_LASSEN_DEPS: "^blt@git.67bef5eb4cf559d01c79051eaac1292eb46430d2=develop ^camp@git.9758bdb59f0bc165bce9ae85fc52d14f7978e852=main"
+  PROJECT_LASSEN_DEPS: "^blt@git.681faee4c1a61201017dd95bc5ff6ad5341372dd=develop ^camp@git.a5e7664cb6262e22036813f2f2e9a77ff507db5e=main"
 
 # Configuration shared by build and test jobs specific to this project.
 # Not all configuration can be shared. Here projects can fine tune the
