@@ -62,6 +62,7 @@ cmake \
   -DCMAKE_BUILD_TYPE=Release \
   -DROCM_ROOT_DIR="/opt/rocm-${COMP_VER}" \
   -DHIP_ROOT_DIR="/opt/rocm-${COMP_VER}/hip" \
+  -DCMAKE_PREFIX_PATH="/opt/rocm-${COMP_VER}" \
   -DHIP_PATH=/opt/rocm-${COMP_VER}/llvm/bin \
   -DCMAKE_C_COMPILER=/opt/rocm-${COMP_VER}/llvm/bin/amdclang \
   -DCMAKE_CXX_COMPILER=/opt/rocm-${COMP_VER}/llvm/bin/amdclang++ \
